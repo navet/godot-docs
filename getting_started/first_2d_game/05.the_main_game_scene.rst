@@ -324,7 +324,7 @@ Note that a new instance must be added to the scene using ``add_child()``.
 
     func _on_MobTimer_timeout():
         # Create a new instance of the Mob scene.
-        var mob = mob_scene.instantiate()
+        var mob = MobScene.Instantiate<Mob>();
 
         # Choose a random location on Path2D.
         var mob_spawn_location = get_node("MobPath/MobSpawnLocation")
